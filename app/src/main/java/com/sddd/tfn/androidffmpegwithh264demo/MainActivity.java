@@ -36,28 +36,26 @@ public class MainActivity extends AppCompatActivity {
     private long endMill = 0L;
     private long totalTime = 0L;
 
-    private String[] cmds = {
-            "ffmpeg",
-            "-i",
-            basePath + File.separator + "video_20161111_164706.mp4",
-            "-c:v",
-            "libx264",
-            basePath + File.separator + "out_" + currentTime + ".mp4"
-    };
-
 //    private String[] cmds = {
 //            "ffmpeg",
 //            "-i",
 //            basePath + File.separator + "video_20161111_164706.mp4",
-//            "-b",
-//            "9600",
-//            "-s",
-//            "1080x720",
-//            "-r", "24",
 //            "-c:v",
 //            "libx264",
 //            basePath + File.separator + "out_" + currentTime + ".mp4"
 //    };
+
+    private String[] cmds = {
+            "ffmpeg",
+            "-i",
+            basePath + File.separator + "video_20161111_164706.mp4",
+            "-b",
+            "9600",
+            "-s",
+            "1080x720",
+            "-r", "24",
+            basePath + File.separator + "out_" + currentTime + ".mp4"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

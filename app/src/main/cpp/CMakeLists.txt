@@ -35,9 +35,9 @@ add_library(avfilter-6_lib SHARED IMPORTED)
 set_target_properties(avfilter-6_lib PROPERTIES IMPORTED_LOCATION
                         ${lib_src_DIR}/libavfilter-6.so)
 
-add_library(avdevice-57_lib SHARED IMPORTED)
-set_target_properties(avdevice-57_lib PROPERTIES IMPORTED_LOCATION
-                        ${lib_src_DIR}/libavdevice-57.so)
+#add_library(avdevice-57_lib SHARED IMPORTED)
+#set_target_properties(avdevice-57_lib PROPERTIES IMPORTED_LOCATION
+#                        ${lib_src_DIR}/libavdevice-57.so)
 
 #add_library(avresample-3_lib SHARED IMPORTED)
 #set_target_properties(avresample-3_lib PROPERTIES IMPORTED_LOCATION
@@ -65,8 +65,8 @@ avformat-57_lib
 avutil-55_lib
 avfilter-6_lib
 swresample-2_lib
-swscale-4_lib
-avdevice-57_lib)
+swscale-4_lib)
+#avdevice-57_lib)
 #avresample-3_lib
 #postproc-54_lib)
 
